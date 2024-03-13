@@ -334,6 +334,8 @@ table > tbody > tr > td {
 }
 
 .main011 {
+  z-index: 15;
+
   left: 3rem;
   top: 3rem;
   right: 3rem;
