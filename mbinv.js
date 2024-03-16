@@ -30,7 +30,7 @@ function getHeWi() {
   console.log(heeee);
 
   $("#youtube01").attr("width", wiiii - 20);
-  $("#youtube01").attr("height", heeee - 20);
+  $("#youtube01").attr("height", heeee - 60);
 
   $(".title-main").each(function () {
     $(this).css("width", wiiii);
