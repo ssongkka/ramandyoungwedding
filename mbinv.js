@@ -29,6 +29,9 @@ function getHeWi() {
   console.log(wiiii);
   console.log(heeee);
 
+  $("#youtube01").attr("width", wiiii - 20);
+  $("#youtube01").attr("height", heeee - 20);
+
   $(".title-main").each(function () {
     $(this).css("width", wiiii);
     $(this).css("height", heeee);
@@ -92,7 +95,7 @@ function getHeWi() {
 }
 
 function setImg() {
-  const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+  const array = [1, 2, 3, 4, 5, 6, 7];
   const shuffledArray = array.sort((a, b) => 0.5 - Math.random());
 
   console.log(shuffledArray);
@@ -109,8 +112,6 @@ function setImg() {
     arrImg[i] = namee;
   }
 
-  console.log(arrImg);
-
   $("#imgg001").attr("src", arrImg[0]);
   $("#imgg002").attr("src", arrImg[1]);
   $("#imgg003").attr("src", arrImg[2]);
@@ -118,16 +119,6 @@ function setImg() {
   $("#imgg005").attr("src", arrImg[4]);
   $("#imgg006").attr("src", arrImg[5]);
   $("#imgg007").attr("src", arrImg[6]);
-  $("#imgg008").attr("src", arrImg[7]);
-  $("#imgg009").attr("src", arrImg[8]);
-  $("#imgg010").attr("src", arrImg[9]);
-  $("#imgg011").attr("src", arrImg[10]);
-  $("#imgg012").attr("src", arrImg[11]);
-  $("#imgg013").attr("src", arrImg[12]);
-  $("#imgg014").attr("src", arrImg[13]);
-  $("#imgg015").attr("src", arrImg[14]);
-  $("#imgg016").attr("src", arrImg[15]);
-  $("#imgg017").attr("src", arrImg[16]);
 }
 
 $(document).on("click", "#showMd01Call", function () {
