@@ -20,6 +20,13 @@ $(document).ready(function () {
   setingjang();
   $("#imginjang").css("transform", "rotateX(0deg) rotateY(0deg) rotateZ(0deg)");
   setImg();
+
+  setTimeout(function () {
+    $("#imgtouch").attr(
+      "class",
+      "animate__animated animate__flash animate__slow animate__infinite"
+    );
+  }, 2300);
 });
 
 function getHeWi() {
@@ -97,8 +104,6 @@ function getHeWi() {
 function setImg() {
   const array = [1, 2, 3, 4, 5, 6, 7];
   const shuffledArray = array.sort((a, b) => 0.5 - Math.random());
-
-  console.log(shuffledArray);
 
   let arrImg = {};
   for (let i = 0; i < array.length; i++) {
@@ -337,6 +342,7 @@ $(document).on("click", "#bong-main1", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_01_00.html");
@@ -348,6 +354,7 @@ $(document).on("click", "#bong-main2", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_01_01.html");
@@ -359,6 +366,7 @@ $(document).on("click", "#bong-main3", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_01_02.html");
@@ -370,6 +378,7 @@ $(document).on("click", "#bong-main4", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_02_00.html");
@@ -381,6 +390,7 @@ $(document).on("click", "#bong-main44", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_02_000.html");
@@ -392,6 +402,7 @@ $(document).on("click", "#bong-main5", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_02_01.html");
@@ -403,6 +414,7 @@ $(document).on("click", "#bong-main6", function () {
     "class",
     "animate__animated animate__fadeOutDown animate__slow"
   );
+  $("#imgtouch").attr("class", "animate__animated animate__zoomOut");
 
   setTimeout(function () {
     $(location).attr("href", "main_02_02.html");
